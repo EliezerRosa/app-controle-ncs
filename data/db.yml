@@ -1,0 +1,78 @@
+appConfig:
+  superAdminEmail: "zico.josias@gmail.com"
+  userRoles:
+    zico.josias@gmail.com: "Super Admin"
+    capitao.exemplo@email.com: "Capitão"
+    admin.exemplo@email.com: "Admin"
+    publicador@exemplo.com: "Comum"
+territories:
+  "01":
+    name: "Território Central"
+    status: "Em Uso"
+    lastUse: "2025-10-15T10:00:00Z"
+    blocks:
+      "1":
+        summary:
+          total: 4
+          verde: 4
+          amarelo: 0
+          laranja: 0
+          vermelho: 0
+        imageUrl: "https://example.com/territorio-01-bloco-1.png"
+        houses:
+          "1":
+            status: 1
+            chalkNumber: "1"
+            officialNumber: "123A"
+            notes: ""
+            lastVisit: null
+          "2":
+            status: 2
+            chalkNumber: "2"
+            officialNumber: "123B"
+            notes: "Visita após 18h"
+            lastVisit: "2025-10-15T09:30:00Z"
+          "3":
+            status: 1
+            chalkNumber: "3"
+            officialNumber: ""
+            notes: ""
+            lastVisit: null
+          "4":
+            status: 4
+            chalkNumber: "4"
+            officialNumber: "123D"
+            notes: "Estudo bíblico iniciado"
+            lastVisit: "2025-09-30T14:15:00Z"
+  "02":
+    name: "Parque Jacaraípe"
+    status: "Disponível"
+    lastUse: "2025-09-20T16:45:00Z"
+    blocks:
+      "1":
+        summary:
+          total: 3
+          verde: 3
+          amarelo: 0
+          laranja: 0
+          vermelho: 0
+        imageUrl: "https://example.com/territorio-02-bloco-1.png"
+        houses:
+          "1":
+            status: 1
+            chalkNumber: "1"
+            officialNumber: "45"
+            notes: ""
+            lastVisit: null
+          "2":
+            status: 1
+            chalkNumber: "2"
+            officialNumber: "45B"
+            notes: ""
+            lastVisit: null
+          "3":
+            status: 1
+            chalkNumber: "3"
+            officialNumber: "47"
+            notes: ""
+            lastVisit: null
