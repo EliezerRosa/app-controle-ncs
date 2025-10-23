@@ -1,0 +1,12 @@
+{
+    "status":  "ok",
+    "http":  200,
+    "token":  "valid",
+    "modalCount":  0,
+    "timestamp":  "2025-10-23T19:15:00.5875517-03:00",
+    "messages":  [
+                     "[controle-ncs] Token reconstruído.",
+                     "[controle-ncs] Dados carregados."
+                 ]
+}
+

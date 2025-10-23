@@ -1,0 +1,64 @@
+{
+    "consoleLog":  [
+                       {
+                           "type":  "info",
+                           "text":  "[controle-ncs] Aguardando token..."
+                       },
+                       {
+                           "type":  "info",
+                           "text":  "[controle-ncs] Token reconstruído."
+                       },
+                       {
+                           "type":  "info",
+                           "text":  "[controle-ncs] Dados carregados."
+                       }
+                   ],
+    "networkLog":  [
+                       {
+                           "url":  "http://127.0.0.1:4173/app-controle-ncs/",
+                           "method":  "GET",
+                           "status":  200
+                       },
+                       {
+                           "url":  "http://127.0.0.1:4173/app-controle-ncs/assets/index-Ca8Uj8ZZ.css",
+                           "method":  "GET",
+                           "status":  200
+                       },
+                       {
+                           "url":  "http://127.0.0.1:4173/app-controle-ncs/assets/index-Ce1GOsnV.js",
+                           "method":  "GET",
+                           "status":  200
+                       },
+                       {
+                           "url":  "http://127.0.0.1:4173/app-controle-ncs/token.json",
+                           "method":  "GET",
+                           "status":  200
+                       },
+                       {
+                           "url":  "https://api.github.com/repos/EliezerRosa/app-controle-ncs/dispatches",
+                           "method":  "POST",
+                           "status":  204
+                       },
+                       {
+                           "url":  "https://api.github.com/repos/EliezerRosa/app-controle-ncs/contents/data/db.yml",
+                           "method":  "GET",
+                           "status":  200
+                       },
+                       {
+                           "url":  "https://api.github.com/repos/EliezerRosa/app-controle-ncs/contents/data/db.yml",
+                           "method":  "GET",
+                           "status":  200
+                       }
+                   ],
+    "modalCount":  0,
+    "patStoredMasked":  "ghp_***qaKX",
+    "workflowFlag":  "true",
+    "githubCheck":  {
+                        "ok":  true,
+                        "status":  200,
+                        "rateLimit":  "4990",
+                        "sha":  "8dc5d3ac63cef35480233f590c283e38f39d5b62",
+                        "contentLength":  2721
+                    }
+}
+
