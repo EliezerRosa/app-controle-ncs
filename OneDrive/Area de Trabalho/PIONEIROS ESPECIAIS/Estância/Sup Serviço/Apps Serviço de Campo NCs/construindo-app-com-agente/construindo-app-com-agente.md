@@ -271,7 +271,8 @@ Para visualizar, salve o trecho acima em um arquivo `.puml` ou utilize renderiza
 - **Prompt v3 — roteiro final de execução:** consolida o plano detalhado para desenvolvimento, documentação e entrega. [Abrir](../docs_export/prompts/prompt-v3.pdf)
 
 ### F. Demonstração em Vídeo
-O walkthrough da solução, narrando a cooperação humano-IA, pode ser reproduzido localmente. [Assistir ao vídeo (MP4, ~85 MB)](../docs_export/media/app-com-ia-para-a-dio.mp4)
+O walkthrough da solução, narrando a cooperação humano-IA, ficará disponível como ativo anexado a uma publicação em GitHub Releases. [Assistir ao vídeo (GitHub Releases)](https://github.com/EliezerRosa/app-controle-ncs/releases/latest/download/app-com-ia-para-a-dio.mp4)
+> Após enviar o MP4 para a área de Releases, mantenha o nome do arquivo (`app-com-ia-para-a-dio.mp4`) para que o link acima permaneça válido.
 
 ---
 
