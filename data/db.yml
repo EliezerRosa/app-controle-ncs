@@ -50,10 +50,10 @@ territories:
         houses:
           '1':
             chalkNumber: '1'
-            lastVisit: null
+            lastVisit: '2025-10-24T17:28:11.973Z'
             notes: ''
             officialNumber: '45'
-            status: 1
+            status: 2
           '2':
             chalkNumber: '2'
             lastVisit: null
@@ -68,10 +68,10 @@ territories:
             status: 1
         imageUrl: https://example.com/territorio-02-bloco-1.png
         summary:
-          amarelo: 0
+          amarelo: 1
           laranja: 0
           total: 3
-          verde: 3
+          verde: 2
           vermelho: 0
     lastUse: '2025-09-20T16:45:00Z'
     name: Parque Jacaraípe
