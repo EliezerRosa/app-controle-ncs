@@ -66,12 +66,24 @@ territories:
             notes: ''
             officialNumber: '47'
             status: 1
+          '4':
+            chalkNumber: '4'
+            lastVisit: null
+            notes: ''
+            officialNumber: ''
+            status: 1
+          '5':
+            chalkNumber: '5'
+            lastVisit: null
+            notes: ''
+            officialNumber: ''
+            status: 1
         imageUrl: https://example.com/territorio-02-bloco-1.png
         summary:
           amarelo: 1
           laranja: 0
-          total: 3
-          verde: 2
+          total: 5
+          verde: 4
           vermelho: 0
     lastUse: '2025-09-20T16:45:00Z'
     name: Parque Jacaraípe
