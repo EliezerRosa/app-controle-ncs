@@ -362,3 +362,24 @@ Pode, porém deve atualizar o parser e as interfaces correspondentes em `AppCont
 ## 10. Como contribuir com novas features?
 Crie branch, adicione testes relevante, mantenha as guias deste diretório atualizadas se houver novos fluxos, e abra Pull Request para revisão.
 ```
+
+### Apêndice I  Evolução dos Prompts
+```markdown
+# Evolução dos Prompts
+
+- **Prompt v1 — briefing inicial:** documento original que contextualiza o problema, stakeholders e objetivo do app.
+  - Arquivo: `prompts/prompt-v1.pdf`
+- **Prompt v2 — refinamento colaborativo:** versão com ajustes após diagnósticos técnicos e definição de políticas de segurança do PAT.
+  - Arquivo: `prompts/prompt-v2.pdf`
+- **Prompt v3 — roteiro final:** consolida backlog, artefatos esperados e plano de execução assistida pelo agente.
+  - Arquivo: `prompts/prompt-v3.pdf`
+```
+
+### Apêndice J  Demonstração em Vídeo
+```markdown
+# Demonstração em Vídeo
+
+- **Walkthrough completo:** `media/app-com-ia-para-a-dio.mp4`
+  - Conteúdo: apresentação narrada da jornada de desenvolvimento IA + humano, cobrindo setup, fluxos críticos e tour pela documentação.
+  - Observação: arquivo local (~85 MB); mantenha em repositório privado ou reavalie hospedagem externa se precisar compartilhar publicamente.
+```

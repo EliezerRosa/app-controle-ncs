@@ -174,7 +174,7 @@ A frase registrada durante uma auditoria ilustra o equilíbrio: humanos definem 
 6. Entrega final com checklist validado e apontamento de próximos passos.
 
 ### D. Diagrama UML de Classes
-O diagrama consolidado está disponível em `../docs_export/Controle_NCs_Classes.png`, com o código-fonte em `../docs_export/controle-ncs-diagrama.puml`; ambos podem ser reutilizados durante o onboarding técnico.
+O diagrama consolidado está disponível em `../docs_export/Controle_NCs_Classes.png`, com o código-fonte em `../docs_export/controle-ncs-diagrama.puml`; versões complementares incluem o PDF para impressão (`../docs_export/media/app-controle-ncs-uml.pdf`) e a miniatura em JPG (`../docs_export/media/app-controle-ncs-uml-preview.jpg`).
 
 ![Visão UML do Controle NCs](../docs_export/Controle_NCs_Classes.png)
 
@@ -264,6 +264,14 @@ enum HouseStatus {
 @enduml
 ```
 Para visualizar, salve o trecho acima em um arquivo `.puml` ou utilize renderizadores PlantUML (ex.: Visual Studio Code com extensão apropriada, plantuml.com/plantuml ou Visual Paradigm Online).
+
+### E. Evolução dos Prompts
+- **Prompt v1 — briefing inicial:** captura o enunciado original do desafio e o contexto operacional. [Abrir](../docs_export/prompts/prompt-v1.pdf)
+- **Prompt v2 — refinamento colaborativo:** agrega restrições técnicas, governança do PAT e critérios de aceite. [Abrir](../docs_export/prompts/prompt-v2.pdf)
+- **Prompt v3 — roteiro final de execução:** consolida o plano detalhado para desenvolvimento, documentação e entrega. [Abrir](../docs_export/prompts/prompt-v3.pdf)
+
+### F. Demonstração em Vídeo
+O walkthrough da solução, narrando a cooperação humano-IA, pode ser reproduzido localmente. [Assistir ao vídeo (MP4, ~85 MB)](../docs_export/media/app-com-ia-para-a-dio.mp4)
 
 ---
 
