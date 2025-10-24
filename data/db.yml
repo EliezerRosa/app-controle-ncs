@@ -18,10 +18,10 @@ territories:
             status: 1
           '2':
             chalkNumber: '2'
-            lastVisit: '2025-10-15T09:30:00Z'
+            lastVisit: '2025-10-24T00:02:24.312Z'
             notes: Visita após 18h
             officialNumber: 123B
-            status: 2
+            status: 3
           '3':
             chalkNumber: '3'
             lastVisit: null
@@ -36,8 +36,8 @@ territories:
             status: 4
         imageUrl: https://example.com/territorio-01-bloco-1.png
         summary:
-          amarelo: 1
-          laranja: 0
+          amarelo: 0
+          laranja: 1
           total: 4
           verde: 2
           vermelho: 1
