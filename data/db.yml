@@ -12,10 +12,10 @@ territories:
         houses:
           '1':
             chalkNumber: '1'
-            lastVisit: '2025-10-24T00:03:04.799Z'
+            lastVisit: '2025-10-24T00:12:57.736Z'
             notes: ''
             officialNumber: 123A
-            status: 2
+            status: 3
           '2':
             chalkNumber: '2'
             lastVisit: '2025-10-24T00:02:24.312Z'
@@ -36,8 +36,8 @@ territories:
             status: 4
         imageUrl: https://example.com/territorio-01-bloco-1.png
         summary:
-          amarelo: 1
-          laranja: 1
+          amarelo: 0
+          laranja: 2
           total: 4
           verde: 1
           vermelho: 1
