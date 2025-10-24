@@ -379,7 +379,7 @@ Crie branch, adicione testes relevante, mantenha as guias deste diretório atual
 ```markdown
 # Demonstração em Vídeo
 
-- **Walkthrough completo:** `media/app-com-ia-para-a-dio.mp4`
+- **Walkthrough completo:** baixe `app-com-ia-para-a-dio.mp4` pela seção *Releases* do GitHub (mesmo nome do arquivo original).
   - Conteúdo: apresentação narrada da jornada de desenvolvimento IA + humano, cobrindo setup, fluxos críticos e tour pela documentação.
-  - Observação: arquivo local (~85 MB); mantenha em repositório privado ou reavalie hospedagem externa se precisar compartilhar publicamente.
+  - Observação: mantenha sempre o mesmo nome do arquivo ao anexar na Release para preservar o link descrito na documentação.
 ```

@@ -8,4 +8,3 @@ test-results/
 # Large delivery bundles kept outside version control
 *.zip
 *.mp4
-!docs_export/media/app-com-ia-para-a-dio.mp4
