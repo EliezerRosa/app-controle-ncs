@@ -1,0 +1,10 @@
+# Local secrets
+PAT-TERRITORIOS.txt
+
+# Dependencies and generated assets
+node_modules/
+test-results/
+
+# Large delivery bundles kept outside version control
+*.zip
+*.mp4

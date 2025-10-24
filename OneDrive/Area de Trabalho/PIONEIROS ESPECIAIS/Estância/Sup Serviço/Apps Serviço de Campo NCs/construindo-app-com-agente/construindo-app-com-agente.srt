@@ -1,0 +1,87 @@
+1
+00:00:00,000 --> 00:00:10,000
+(voz calma, inspiradora)
+"Construindo um Aplicativo com um Agente-Desenvolvedor."
+Uma jornada entre o raciocínio humano e a execução de uma inteligência técnica.
+
+2
+00:00:10,000 --> 00:00:25,000
+Tudo começou com uma simples pergunta:
+"Até onde uma inteligência artificial pode realmente construir um sistema funcional?"
+Meu objetivo era criar um aplicativo prático — não apenas com ajuda da IA, mas em coautoria com ela.
+
+3
+00:00:25,000 --> 00:00:40,000
+O agente GPT-5 Codex seria meu parceiro de código dentro do VS Code.
+Eu forneceria intenção. Ele, execução.
+Assim, o diálogo virou código.
+
+4
+00:00:40,000 --> 00:00:55,000
+No contexto do desenvolvimento, um agente é um desenvolvedor sintético.
+Ele lê o workspace, entende arquivos, interpreta logs e executa comandos reais.
+
+5
+00:00:55,000 --> 00:01:10,000
+A construção com um agente segue cinco camadas:
+Contexto, Interpretação, Execução, Diagnóstico e Publicação.
+Cinco movimentos, um só raciocínio.
+
+6
+00:01:10,000 --> 00:01:25,000
+Eu descrevia o que queria — e o agente criava, testava, corrigia e publicava.
+Assim nasceu o app Controle NCS, uma aplicação React conectada ao GitHub via token.
+
+7
+00:01:25,000 --> 00:01:45,000
+O primeiro obstáculo: um erro 404 da API GitHub.
+O agente investigou e descobriu que o problema não era o token, mas o caminho incorreto do arquivo dentro do repositório.
+
+8
+00:01:45,000 --> 00:02:00,000
+Ele moveu o db.yml, recompilou, e o erro sumiu.
+Foi aí que percebi: o agente não apenas escreve código — ele compreende arquitetura.
+
+9
+00:02:00,000 --> 00:02:20,000
+Cada interação formava um ciclo:
+Intenção → Ação → Validação → Aprendizado.
+Eu fornecia propósito; ele, execução. Juntos, evoluíamos o raciocínio.
+
+10
+00:02:20,000 --> 00:02:40,000
+Em certo ponto, parecia pair programming:
+um humano e um agente sintético trabalhando em sintonia.
+Dois mundos colaborando na criação de um mesmo sistema lógico.
+
+11
+00:02:40,000 --> 00:02:55,000
+Durante uma auditoria, o agente escreveu:
+“O erro não está na chave, mas na porta.”
+A técnica sem propósito é ruído. O humano dá sentido à lógica.
+
+12
+00:02:55,000 --> 00:03:15,000
+Após o alinhamento: tokens reconstruídos, dados carregados, build automatizado, auditoria limpa.
+O sistema estava vivo e coerente.
+
+13
+00:03:15,000 --> 00:03:35,000
+Construir com um agente é dialogar com um sistema cognitivo.
+A linguagem natural se torna código-fonte, e o raciocínio técnico se torna conversa.
+
+14
+00:03:35,000 --> 00:03:55,000
+O desenvolvedor do futuro é o curador de intenções.
+O agente é a mente técnica; o humano é quem define o propósito.
+
+15
+00:03:55,000 --> 00:04:15,000
+Construir um app com um agente é abrir mão do controle mecânico
+e abraçar uma nova forma de criar — onde pensamento e prática se alinham.
+
+16
+00:04:15,000 --> 00:04:30,000
+“O equilíbrio técnico vem quando o caminho lógico e o caminho físico coincidem.”
+(voz suave e final)
+Assinatura: Moshe • 2025 • DIO Project.
