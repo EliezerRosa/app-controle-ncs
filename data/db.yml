@@ -12,10 +12,10 @@ territories:
         houses:
           '1':
             chalkNumber: '1'
-            lastVisit: '2025-10-24T00:20:15.115Z'
+            lastVisit: '2025-10-24T17:32:13.795Z'
             notes: ''
             officialNumber: 123A
-            status: 4
+            status: 1
           '2':
             chalkNumber: '2'
             lastVisit: '2025-10-24T00:02:24.312Z'
@@ -39,8 +39,8 @@ territories:
           amarelo: 0
           laranja: 1
           total: 4
-          verde: 1
-          vermelho: 2
+          verde: 2
+          vermelho: 1
     lastUse: '2025-10-15T10:00:00Z'
     name: Território Central
     status: Em Uso
