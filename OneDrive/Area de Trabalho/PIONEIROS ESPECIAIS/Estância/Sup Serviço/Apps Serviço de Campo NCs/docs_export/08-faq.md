@@ -19,7 +19,7 @@ Não. O app precisa da API GitHub para ler/gravar o YAML. Sem internet ou sem PA
 Use o histórico de commits do GitHub para recuperar versões anteriores de `data/db.yml`. Recomenda-se criar tags e branches de backup antes de grandes edições.
 
 ## 7. Existem testes automatizados?
-Sim, Playwright cobre o fluxo de login e carregamento inicial. Rode `npm run test:e2e` antes de subir mudanças.
+Sim, Playwright cobre o fluxo de login e carregamento inicial. Rode `npx playwright test` antes de subir mudanças.
 
 ## 8. O deploy falhou, o que fazer?
 Verifique o log do workflow `pages.yml`. Na maioria dos casos há erro de build (`npm run build`) ou falta do token JSON válido. Corrija e reenvie.

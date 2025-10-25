@@ -1,8 +1,8 @@
 # Checklist CI/CD (GitHub Pages)
 
 ## Antes do Commit
-- [ ] Executar `npm run lint` (se configurado) e `npm run build` local.
-- [ ] Rodar `npm run test:e2e` para garantir que o fluxo principal não quebrou.
+- [ ] Executar `npm run build` local (e `npm run lint` se estiver configurado).
+- [ ] Rodar `npx playwright test` para garantir que o fluxo principal não quebrou.
 - [ ] Verificar se `public/token.json` está sincronizado com o PAT vigente.
 - [ ] Confirmar alterações no `data/db.yml` (YAML bem formatado).
 

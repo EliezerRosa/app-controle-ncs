@@ -24,9 +24,9 @@
 - Geração de documentação adicional para exportação (`docs_export/*`), incluindo mapa de componentes, timeline, guia de segurança e FAQ.
 
 ## 6. Empacotamento e Entregáveis
-- Produção de `app-controle-ncs-codigo.zip` (snapshot completo do repositório).
-- Produção de `app-controle-ncs-extras.zip` (YAML + scripts + docs essenciais para integração com outros times/IA).
-- Preparação do diretório `docs_export/` para organizar e zipar os novos materiais para consumo externo.
+- Consolidação do diretório `docs_export/` como fonte única da documentação exportável.
+- Criação opcional de pacotes `.zip` a partir de `docs_export/` quando requisitado por parceiros externos.
+- Publicação do walkthrough em vídeo via GitHub Releases para evitar binários grandes no repositório.
 
 ## 7. Próximos Passos Sugeridos
 - Automatizar a validação do checksum do token na CI antes do deploy.

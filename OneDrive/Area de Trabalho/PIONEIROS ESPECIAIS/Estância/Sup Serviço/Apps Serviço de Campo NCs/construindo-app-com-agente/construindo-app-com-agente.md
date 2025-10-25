@@ -144,7 +144,7 @@ A frase registrada durante uma auditoria ilustra o equilíbrio: humanos definem 
 - **Ampliação de testes** — cobrir mutações de YAML, rollback e autorizações diferenciadas.  
 - **Segurança do PAT** — reduzir tempo de vida, monitorar logs e integrar validação automática na CI.  
 - **Evolução da arquitetura** — considerar GraphQL ou mecanismos de cache para otimizar consumo da API; modularizar `AppControleNcs` em subcomponentes para facilitar manutenção.  
-- **Documentação viva** — manter o compêndio atualizado, evitar duplicidade (unificar diretórios `docs_export/` e `app-controle-ncs-docs-export/`).
+- **Documentação viva** — manter o compêndio atualizado e concentrado no diretório `docs_export/`, evitando duplicidade de arquivos.
 
 ---
 

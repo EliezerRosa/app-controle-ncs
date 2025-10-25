@@ -16,9 +16,8 @@
 
 ## Execução Local
 ```powershell
-npm run test:e2e
+npx playwright test
 ```
-- O script é atalho para `playwright test`.
 - Se for a primeira vez, execute `npx playwright install`.
 
 ## Integração na CI
@@ -28,7 +27,7 @@ npm run test:e2e
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npm run test:e2e
+      run: npx playwright test
     ```
   - Recomenda-se usar `continue-on-error: false` para falhar o pipeline quando testes quebrarem.
 

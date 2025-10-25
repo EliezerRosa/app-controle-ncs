@@ -27,9 +27,14 @@
    ```
 4. **Executar testes Playwright**
    ```powershell
-   npm run test:e2e
+   npx playwright test
    ```
    (Certifique-se de ter rodado `npx playwright install` uma vez para baixar browsers.)
+
+5. **Validar token ofuscado (opcional, sempre que atualizar o PAT)**
+   ```powershell
+   npm run validate:token
+   ```
 
 ## Configurações Essenciais
 - **Token JSON** (`public/token.json`): contém fragmentos codificados do PAT. Use o script `scripts/publish-token.mjs` para atualizar o token publicado.
