@@ -105,6 +105,7 @@ Detalhes adicionais: `docs_export/04-guia-seguranca-pat.md`.
 - **UML fonte:** `docs_export/controle-ncs-diagrama.puml`.
 - **Renderizações:** `docs_export/Controle_NCs_Classes.png` (PNG principal), `docs_export/media/app-controle-ncs-uml.pdf`, `docs_export/media/app-controle-ncs-uml-preview.jpg`.
 - **Vídeo demo:** disponível via Releases, arquivo `app-com-ia-para-a-dio.mp4`. Link direto: `https://github.com/EliezerRosa/app-controle-ncs/releases/latest/download/app-com-ia-para-a-dio.mp4`. Mantenha o mesmo nome do arquivo em atualizações.
+- **Fluxo dev + IA:** `docs_export/media/dev-ia-colab.svg` resume como liderança humana e o agente GPT-5 Codex interagem.
 
 ---
 

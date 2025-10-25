@@ -55,6 +55,10 @@ Os principais questionamentos tratam de requisitos de acesso, armazenamento dos 
 - **CI/CD:** Prática de integração e entrega contínuas ([martinfowler.com/articles/continuousIntegration.html](https://martinfowler.com/articles/continuousIntegration.html))  
 - **Checksum:** Técnica de validação de integridade ([en.wikipedia.org/wiki/Checksum](https://en.wikipedia.org/wiki/Checksum))
 
+![Fluxo de colaboração Dev + IA](./media/dev-ia-colab.svg)
+
+> A responsabilidade permanece com o desenvolvedor humano: o agente GPT-5 Codex executa diagnósticos, gera planos e aplica mudanças sempre com logs e confirmações.
+
 ## 10. Interações e Cooperação
 A parceria entre solicitante e agente percorreu diagnóstico, ajustes de código, testes automatizados e produção documental. Priorizamos respostas rápidas, transparência sobre riscos com PAT e transferência de conhecimento por meio de guias temáticos. Essa dinâmica garantiu entregas incrementais com validação contínua.
 

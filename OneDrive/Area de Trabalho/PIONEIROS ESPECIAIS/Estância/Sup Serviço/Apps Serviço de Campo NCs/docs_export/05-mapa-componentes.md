@@ -29,3 +29,4 @@
 - Possível extração de subcomponentes do `AppControleNcs` para melhorar legibilidade (ex.: `TokenBanner`, `TerritoryCard`, `HouseModal`).
 - Inserção futura de cache local ou IndexedDB para permitir modo offline.
 - Integração com GraphQL em vez de REST para otimizar fetch de arquivos no GitHub.
+- Ilustração do ciclo humano + IA disponível em `docs_export/media/dev-ia-colab.svg` para apresentações e sessões de onboarding.
