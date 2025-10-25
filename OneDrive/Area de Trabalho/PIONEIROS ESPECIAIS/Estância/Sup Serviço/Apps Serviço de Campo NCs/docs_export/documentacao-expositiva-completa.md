@@ -62,6 +62,8 @@ Os principais questionamentos tratam de requisitos de acesso, armazenamento dos 
 ## 10. Interações e Cooperação
 A parceria entre solicitante e agente percorreu diagnóstico, ajustes de código, testes automatizados e produção documental. Priorizamos respostas rápidas, transparência sobre riscos com PAT e transferência de conhecimento por meio de guias temáticos. Essa dinâmica garantiu entregas incrementais com validação contínua.
 
+Outro ponto de controle: a única ação manual fora da orquestração do agente foi um login pontual na conta Microsoft; todas as demais execuções, edições e verificações foram solicitadas ao GPT-5 Codex e executadas sob supervisão.
+
 ## 11. Conclusão e Próximos Passos
 O App Controle NCs opera de forma estável com deploy automatizado, testes básicos e documentação abrangente. Recomenda-se evoluir a suíte Playwright para cobrir mutações do YAML, adicionar checagens do token na pipeline e avaliar GitHub Environments para gestão de segredos. A atualização periódica deste compêndio assegura onboarding rápido de novos colaboradores.
 
