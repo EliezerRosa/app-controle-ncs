@@ -1,0 +1,43 @@
+Prompt para Gemini – Vídeo do Projeto “App Controle NCs”
+
+Crie um vídeo narrado em português (duração aproximada de 2 a 3 minutos) apresentando o projeto “App Controle NCs”. Estruture o roteiro com blocos claros: introdução, problema a resolver, solução proposta, destaques técnicos, fluxo operacional e próximos passos. Utilize linguagem acessível, sem perder a precisão técnica esperada por quem atua com desenvolvimento front-end e governança de dados.
+
+Tópicos obrigatórios (ajuste a ordem para manter ritmo fluido):
+
+1. Introdução
+   - Contextualize o “App Controle NCs” como uma SPA React + Vite que auxilia congregações a gerenciar territórios de pregação.
+   - Mencione explicitamente que o repositório está disponível em github.com/EliezerRosa/app-controle-ncs.
+
+2. Problema
+   - Explique a necessidade de consolidar dados de territórios e histórico de visitas, evitando planilhas dispersas e intervenções manuais no GitHub.
+
+3. Solução
+   - Descreva o app como cliente React que usa a GitHub REST API para persistir o arquivo `data/db.yml`.
+   - Destaque o uso de Personal Access Token (PAT) distribuído de forma ofuscada em `public/token.json`.
+
+4. Arquitetura e destaques técnicos
+   - Cite `src/AppControleNcs.tsx` como orquestrador de UI, modais e sincronização.
+   - Comente as funções `encodeTokenArtifact`, `decodeTokenArtifact` e `recoverTokenArtifact`, responsáveis por ofuscar e reconstruir o PAT.
+   - Mencione o polling automático (30s) que detecta commits remotos.
+   - Explique a atribuição de perfis por e-mail (`appConfig.userRoles`).
+
+5. Segurança do PAT
+   - Reforce o fluxo de ofuscação: reversão do PAT, Base64 fragmentado, commit automatizado para GitHub Pages.
+   - Cite a revogação/rotação via script `scripts/publish-token.mjs`.
+
+6. Fluxo operacional
+   - Demonstre o caminho do usuário: login por e-mail, seleção de território/quadra, alteração de status das residências, sequenciamento de casas, administração de usuários.
+
+7. Testes e automação
+   - Mencione `tests/pat-flow.spec.ts` (reconstrução do token), `tests/bootstrap-empty.spec.ts` (bootstrap sem `data/db.yml`) e `scripts/validate-token-flow.mjs` (smoke test do build estático).
+
+8. Documentação e artefatos visuais
+   - Referencie `README.md`, o conjunto `docs_export` (guia de instalação, segurança do PAT, checklist CI/CD) e o diagrama UML `docs_export/controle-ncs-diagrama.puml`.
+
+9. Próximos passos
+   - Sugira modularizar o componente principal, ampliar testes para mutações do YAML e explorar GitHub Environments para segredos rotacionados.
+
+10. Encerramento
+    - Convide o público a acessar o repositório, assistir ao walkthrough disponível na aba Releases (`app-com-ia-para-a-dio.mp4`) e propor melhorias.
+
+Estilo narrativo: confiante, colaborativo e orientado a resultados. Sugira o uso de legendas e sobreposições com capturas de tela e diagramas (por exemplo, a renderização do PlantUML). Ajuste a narração para manter o vídeo dinâmico, com transições suaves entre as seções.

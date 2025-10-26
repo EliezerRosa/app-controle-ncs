@@ -1,0 +1,86 @@
+@startuml Controle_NCs_Classes
+' Diagrama de classes do app Controle NCs
+' Renderize com PlantUML (VS Code Alt+Enter ou plantuml.com)
+
+title Controle NCs – Visão de Classes
+
+skinparam svgMargin 40
+skinparam shadowing false
+
+class AppControleNcs {
+  +state: AppState
+  +useEffect()
+  +handleTokenSubmit(token)
+  +handleSelectTerritory(id)
+  +handleSelectHouse(houseId)
+  +handleUpdateYaml(patch)
+}
+
+class TokenManager {
+  +loadFragmentedToken(): FragmentedToken
+  +decodeToken(fragmented: FragmentedToken): string
+  +storeSessionToken(token: string)
+  +clearSessionToken()
+}
+
+class GithubService {
+  +fetchYaml(path): YamlDocument
+  +updateYaml(path, content, sha): void
+  +decodeBase64(content): string
+  +encodeBase64(raw): string
+}
+
+class YamlRepository {
+  +parseTerritories(doc: YamlDocument): Territory[]
+  +applyPatch(doc: YamlDocument, patch): YamlDocument
+}
+
+class Territory {
+  +id: string
+  +name: string
+  +blocks: Block[]
+}
+
+class Block {
+  +id: string
+  +name: string
+  +houses: House[]
+}
+
+class House {
+  +id: string
+  +status: HouseStatus
+  +assignedTo: string
+  +notes: string
+}
+
+class ModalManager {
+  +openModal(type, payload)
+  +closeModal()
+  +getActiveModal(): ModalState
+}
+
+class NotificationCenter {
+  +notifySuccess(message)
+  +notifyError(message)
+  +clear()
+}
+
+AppControleNcs o-- TokenManager
+AppControleNcs o-- GithubService
+AppControleNcs o-- YamlRepository
+AppControleNcs -> ModalManager : controla
+AppControleNcs -> NotificationCenter : emite
+YamlRepository *-- Territory
+Territory *-- Block
+Block *-- House
+GithubService ..> TokenManager : usa token decodificado
+
+enum HouseStatus {
+  disponivel
+  visitada
+  ausente
+  bloqueada
+}
+
+@enduml
