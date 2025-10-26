@@ -18,10 +18,10 @@ territories:
             status: 4
           '2':
             chalkNumber: '2'
-            lastVisit: '2025-10-26T23:03:17.375Z'
+            lastVisit: '2025-10-26T23:03:18.412Z'
             notes: Visita após 18h
             officialNumber: 123B
-            status: 1
+            status: 2
           '3':
             chalkNumber: '3'
             lastVisit: null
@@ -36,10 +36,10 @@ territories:
             status: 4
         imageUrl: https://example.com/territorio-01-bloco-1.png
         summary:
-          amarelo: 0
+          amarelo: 1
           laranja: 0
           total: 4
-          verde: 2
+          verde: 1
           vermelho: 2
     lastUse: '2025-10-15T10:00:00Z'
     name: Território Central
