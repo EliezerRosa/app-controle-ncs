@@ -138,6 +138,13 @@ const TOKEN_CHARSET = 'ncs-app-secure';
 const TOKEN_COMMIT_MESSAGE = 'Token distribuído para GitHub Pages';
 const IS_DEV_BUILD = (import.meta.env?.DEV ?? false) as boolean;
 const TOKEN_ARTIFACT_URL = `${import.meta.env.BASE_URL ?? '/'}token.json`;
+const DEFAULT_APP_STATE: AppData = {
+  appConfig: {
+    superAdminEmail: '',
+    userRoles: {},
+  },
+  territories: {},
+};
 
 const roleHierarchy: Record<UserRole, number> = {
   Comum: 0,
@@ -499,8 +506,22 @@ const AppControleNcs: React.FC = () => {
       try {
         const headers: HeadersInit = patValue ? { Authorization: `Bearer ${patValue}` } : {};
         const response = await fetch(githubContentUrl(), { headers });
+        if (response.status === 404) {
+          const defaultState = cloneState(DEFAULT_APP_STATE);
+          setAppState(defaultState);
+          setRemoteSha('');
+          setSelectedTerritoryId(null);
+          setSelectedBlockId(null);
+          setChalkLimit('');
+          console.info('[controle-ncs] Repositório vazio, inicializando estado padrão.');
+          surfaceNotification({
+            type: 'info',
+            message: 'Repositório vazio: estado local inicializado.',
+          });
+          return;
+        }
         if (!response.ok) {
-          if ([401, 403, 404].includes(response.status)) {
+          if ([401, 403].includes(response.status)) {
             const patError = new Error('Configure o PAT antes de sincronizar os dados.');
             (patError as Error & { code: string; status: number }).code = 'PAT_REQUIRED';
             (patError as Error & { code: string; status: number }).status = response.status;
@@ -600,6 +621,7 @@ const AppControleNcs: React.FC = () => {
           type: 'error',
           message: (error as Error).message ?? 'Falha ao salvar alterações',
         });
+        throw error;
       } finally {
         setIsSaving(false);
       }
@@ -610,12 +632,17 @@ const AppControleNcs: React.FC = () => {
   const applyStateMutation = useCallback(
     (mutator: (draft: AppData) => void, label: string) => {
       if (!appState) return;
+      const rollbackSnapshot = appState;
       const draft = cloneState(appState);
       mutator(draft);
       setAppState(draft);
-      void commitToGitHub(draft, label);
+      void commitToGitHub(draft, label).catch((error) => {
+        console.warn('[controle-ncs] Commit falhou, revertendo estado local.', error);
+        setAppState(rollbackSnapshot);
+        void loadRemoteState('retry');
+      });
     },
-    [appState, commitToGitHub],
+    [appState, commitToGitHub, loadRemoteState],
   );
 
   useEffect(() => {
