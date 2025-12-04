@@ -17,7 +17,6 @@ Esse mapeamento foi conduzido com o agente GPT-5 Codex já acessando o repositó
 - **Ferramentas:** VS Code rodando GPT-5 Codex como agente operacional, PowerShell para comandos, GitHub como origem única da verdade.
 - **Regras de colaboração:** humano define objetivos e valida cada etapa crítica; agente executa rotinas (git, npm, edições) e explica riscos antes de alterar algo sensível.
 - **Segurança do PAT:** criação de tokens fine-grained, ofuscação automatizada via `scripts/publish-token.mjs`, validação manual com `npm run validate:token`.
-- **Intervenção manual única:** precisei autenticar uma vez na conta Microsoft; todo o restante foi conduzido pelo agente sob minha supervisão.
 
 Esse acordo operacional evitou a “caixa-preta” comum em assistentes autônomos: o agente sempre justificava decisões e aguardava confirmação antes de tocar em recursos críticos.
 
@@ -32,10 +31,6 @@ Esse acordo operacional evitou a “caixa-preta” comum em assistentes autônom
 Cada marco foi registrado pelo agente, com logs de comandos e arquivos modificados, permitindo auditoria posterior.
 
 ## 5. Arquitetura e fluxo técnico
-- ![Fluxo de colaboração humano + IA](./media/dev-ia-colab.svg)
-
-	> A liderança humana define critérios e aprova cada etapa; o agente documenta planos, aplica mudanças e mantém logs e diffs para auditoria.
-
 - **Front-end:** React + Vite + Tailwind CSS, compondo uma SPA servida pelo GitHub Pages.
 - **Persistência:** `data/db.yml` versionado; a aplicação consome e grava via GitHub REST API utilizando o PAT informado pelo operador.
 - **Serviços auxiliares:** `GithubService` (fetch/update base64), `TokenManager` (fragmentação/reconstrução do PAT) e `YamlRepository` (parse + patches do YAML). O [diagrama UML](./Controle_NCs_Classes.png) detalha essas relações.

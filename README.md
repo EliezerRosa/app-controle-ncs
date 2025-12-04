@@ -50,7 +50,7 @@ Toda documentação aprofundada está centralizada em `docs_export/`.3. Faça o 
 | Outras renderizações (PDF/JPG) | `docs_export/media/` |
 | Prompts utilizados na colaboração | `docs_export/prompts/` |
 | Artigo proposta DIO | `docs_export/09-artigo-dio.md` |
-| Crônica detalhada da parceria humano + IA | `construindo-app-com-agente/construindo-app-com-agente.md` |
+| Crônica detalhada da parceria human+IA | `construindo-app-com-agente/construindo-app-com-agente.md` |
 
 > Consulte os arquivos numerados (01–08) para guias rápidos. A crônica completa e os anexos ficam em `documentacao-expositiva-completa.md` para quem prefere um único documento.
 
@@ -105,7 +105,6 @@ Detalhes adicionais: `docs_export/04-guia-seguranca-pat.md`.
 - **UML fonte:** `docs_export/controle-ncs-diagrama.puml`.
 - **Renderizações:** `docs_export/Controle_NCs_Classes.png` (PNG principal), `docs_export/media/app-controle-ncs-uml.pdf`, `docs_export/media/app-controle-ncs-uml-preview.jpg`.
 - **Vídeo demo:** disponível via Releases, arquivo `app-com-ia-para-a-dio.mp4`. Link direto: `https://github.com/EliezerRosa/app-controle-ncs/releases/latest/download/app-com-ia-para-a-dio.mp4`. Mantenha o mesmo nome do arquivo em atualizações.
-- **Fluxo dev + IA:** `docs_export/media/dev-ia-colab.svg` resume como liderança humana e o agente GPT-5 Codex interagem.
 
 ---
 
